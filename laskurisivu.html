@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>BMI Laskuri</title>
+  <link rel="stylesheet" href="../tyylit/tyylit_kaikki.css">
+</head>
+<body>
+  <ul class = "navibar">
+		<li class = "navibar"><a class = "navibar" href ="../index.html">Etusivu</a></li>
+		<li class = "navibar"><a class = "navibar" href ="kuvasivu.html">Kuvasivu</a></li>
+		<li class = "navibar"><a class = "navibar" href ="kellosivu.html">Kellosivu</a></li>
+		<li class = "navibar"><a class = "navibar" href ="laskurisivu.html">BMI laskuri sivu</a></li>
+	</ul>
+  <h1>BMI Laskuri</h1>
+  <div class="laskin">
+    <label for="paino">Paino (kg):</label>
+    <input type="number" id="paino" name="paino">
+
+    <label for="pituus">Pituus (cm):</label>
+    <input type="number" id="pituus" name="pituus">
+
+    <button onclick="laskeBMI()">Laske BMI</button>
+
+    <div id="vastaus"></div>
+    <div id="bmiluokka"></div>
+  </div>
+
+  <script src="../skripti/vikasivujava.js"></script>
+</body>
+</html>
